@@ -3,47 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <title>Tailwind CSS Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="header" class=" flex items-center justify-center bg-green-900 w-full h-40 text-white">
-           <div id="bigbox">
-            <div id="box1" class="text-4xl mb-5">
-                Welcome to your Website Task
-               </div>
-               <div id="box2" class="flex items-center justify-center" >
-                <div id="text" class="mr-2">Home</div>
-                <div id="text" class="mr-2">About</div>
-                <div id="text" class="mr-2">Contact</div>
-               </div>
-           </div>
+    <div class="container">
+        <div class="bg-black">
+           <h1 class="text-white text-3xl font-bold text-center p-4">My Portfolio</h1>
+           <nav>
+            <ul class="flex items-center text-white justify-center gap-4 p-4">
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>   
+            </ul>
+           </nav>
         </div>
-        <div id="content" class="flex h-130 w-full">
-            <div id="s1" class="flex-1 p-30 justify-center text-center space-y-10" >
-                <div id="ss" class="bg-white-100 p-2 shadow-2xl">
-                    <p class="text-left ml-3 text-green-400">About CSS</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, repellat!</p>
+        <div class="w-screen h-screen bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center justify-center">
+            <div class="bg-white w-1/2 h-1/2 rounded-lg shadow-lg p-6 flex flex-col gap-4 justify-center">
+                <div class="bg-gray-100 rounded-md shadow p-4 flex items-center justify-center">
+                    <h2 class="text-xl font-semibold text-blue-600">Card One</h2>
                 </div>
-                <div id="ss" class="p-2 shadow-2xl">
-                    <p class="text-left ml-3  text-green-400">responsive</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati!</p>
+                <div class="bg-gray-100 rounded-md shadow p-4 flex items-center justify-center">
+                    <h2 class="text-xl font-semibold text-green-600">Card Two</h2>
                 </div>
             </div>
-            <div id="s2" class="flex-1"></div>
-            <div id="s3" class="flex-1 flex justify-center items-center">
-                <div id="ek" class="mb-60 bg-white-200 p-10 shadow-2xl">
-                    <h4 class="text-green-400">Box model</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, accusantium.</p>
-                </div>
-            </div>
-        </div>
-        <div id="footer" class=" bg-black text-white flex items-center justify-center h-10 space-x-2">
-            created by john Follo us Instgram  | Twitter | Linkdin
         </div>
     </div>
 </body>

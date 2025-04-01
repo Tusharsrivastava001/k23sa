@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleForm() {
+            var formDiv = document.getElementById("for3");
+            if (formDiv.style.display === "none" || formDiv.style.display === "") {
+                formDiv.style.display = "block";
+            } else {
+                formDiv.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="text">Home</div>
+            <div class="text">About us</div>
+            <div class="text" onclick="toggleForm()" style="cursor: pointer;">Contact Us</div>
+        </div>
+        
+        <div id="for3" style="display: none;">
+            <form action="submit">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="content">
+            <div id="box1">
+                <img src="https://images.unsplash.com/photo-1741620979760-bccef3bb5b17?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div id="box2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis totam animi labore molestias eum, praesentium tempore consequuntur vero culpa eos aliquam quisquam atque, dolore reiciendis placeat ipsum eligendi consequatur?
+            </div>
+        </div>
+    </div>
+</body>
+</html>
